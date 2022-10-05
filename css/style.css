@@ -1,17 +1,17 @@
 :root{
     --poscolor:blanchedalmond;
     --hovercolor:burlywood;
+    scroll-behavior: smooth;
 }
 
 i{
     color:brown;
 }
 
-i:hover{
-    color: var(--hovercolor);
-}
+
 
 body{
+    overflow: hidden;
     margin: 0;
     background-color: black;
     color: var(--poscolor);
@@ -20,7 +20,7 @@ body{
 }
 
 h2{
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .container{
@@ -84,33 +84,41 @@ h2{
     width: 81%;
 }
 
-.presentacion{
+.section{
     font-variant: normal;
+    min-height: 100vh;
     max-height: 100vh;
     margin-left: 10vh;
-    margin-right: 10vh;
-    margin-top: 15vh;
+    margin-right: 15vh;
+    padding-top: 15vh;
 }
 
-.presentacion__title{
+.section__title{
     font-size: 4rem;
 }
 
-.presentacion__subtitle{
+.section__subtitle{
     font-size: 3rem;
     margin-top: -3rem;
+    margin-bottom: -0.25rem;
 }
 
-.presentacion__subtitle--color{
+.section--color{
     color: brown;
 }
 
-.presentacion__text{
-    font-size: 2rem;
+.section__text{
+    font-size: 1rem;
+    text-align: left;
     margin-top: -1rem;
 }
 
-.presentacion__sobremi{
+.section__text--mb{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.section__link{
     background-color: rgb(50, 54, 52);
     color: var(--poscolor);
     display: inline-block;
@@ -120,6 +128,47 @@ h2{
     border-radius: 15px;
 }
 
-.presentacion__sobremi:hover{
+.section__link--centrado{
+    margin: auto;
+}
+
+.section__link:hover,.section__link:hover>i{
     color: var(--hovercolor);
+    background-color: antiquewhite;
+}
+
+.section--sobremi{
+    padding-top: 0;
+    margin-right: 10vw;
+    width: 81%;
+}
+
+.section__div{
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 1.5rem;
+    width: 90%;
+    text-align: center;
+}
+
+.card{
+    background-color: rgb(15, 17, 16);
+    margin: 0.5rem;
+    width: 25%;
+    font-size: 2.2rem;
+    padding: 0.2rem;
+    font-variant: small-caps;
+}
+
+.card__num{
+    font-size: 3rem;
+    margin-bottom: -2rem;
+    color:brown;
 }

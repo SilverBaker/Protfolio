@@ -21,25 +21,55 @@
             <h1>Sergio de Jesús</h1>
             <h2>DAW2 Front-end Developer</h2>
             <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="#">Inicio</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Sobre mi</a></li>
+                <li class="nav__item"><a class="nav__link" href="#inicio">Inicio</a></li>
+                <li class="nav__item"><a class="nav__link" href="#sobremi">Sobre mi</a></li>
                 <li class="nav__item"><a class="nav__link" href="#">Formación</a></li>
                 <li class="nav__item"><a class="nav__link" href="#">Mi Portfolio (Mis cositas)</a></li>
                 <li class="nav__item"><a class="nav__link" href="#">Contacto</a></li>
             </ul>
         </nav>
         <div class="main">
-            <div class="presentacion">
-                <p class="presentacion__title">
+            <section class="section" id="inicio">
+                <p class="section__title">
                     Hola!!!
                 </p>
-                <p class="presentacion__subtitle">
-                    Soy <span class="presentacion__subtitle--color">Iñigo Montoya</span>
+                <p class="section__subtitle">
+                    Soy <span class="section--color">Iñigo Montoya</span>
                 </p>
-                <p class="presentacion__text">Tu mataste a mi padre, prepárate a morir</p>
-                <p class="presentacion__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda a maxime dicta, cumque temporibus corrupti et velit deserunt dolor aperiam error praesentium! Eaque ipsum error aliquid fugiat dolores, vel minima?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure labore cupiditate ratione itaque. Sequi sed nobis maxime, cum vitae qui illum non tempore ea distinctio consequatur neque repellat numquam dicta.</p>
-                <a  href="#"><div class="presentacion__sobremi">Sobre mi&nbsp;&nbsp;<i class="home__fas fas fa-user"></i></div></a>
-            </div>
+                <p class="section__text section__text--mb">Tu mataste a mi padre, prepárate a morir</p>
+                <p class="section__text section__text--mb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sint, sit totam repellat asperiores, doloremque quibusdam ducimus beatae voluptatem laboriosam saepe. Cupiditate repellat natus architecto ducimus minus nemo amet perspiciatis!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda a maxime dicta, cumque temporibus corrupti et velit deserunt dolor aperiam error praesentium! Eaque ipsum error aliquid fugiat dolores, vel minima?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure labore cupiditate ratione itaque. Sequi sed nobis maxime, cum vitae qui illum non tempore ea distinctio consequatur neque repellat numquam dicta.</p>
+                <a  href="#sobremi"><div class="section__link">Sobre mi&nbsp;&nbsp;<i class="home__fas fas fa-user"></i></div></a>
+            </section>
+            <section class="section section--sobremi" id="sobremi">
+                <p class="section__title">Sobre <span class="section--color">mi</span></p>
+                <div class="section__div">
+                    <p class="section__text">Nombre : &nbsp;&nbsp;<span class="section--color">Sergio de Jesús Sánchez</span></p>
+                    <p class="section__text">Edad : &nbsp;&nbsp;<span class="section--color">21</span></p>
+                    <p class="section__text">Formación : &nbsp;&nbsp;<span class="section--color">Técnico Superior en DAW</span></p>
+                    <p class="section__text">Perfil : &nbsp;&nbsp;<span class="section--color">Front-end Developer</span></p>
+                    <p class="section__text">Idioma : &nbsp;&nbsp;<span class="section--color">Inglés</span></p>
+                    <p class="section__text">Hobies : &nbsp;&nbsp;<span class="section--color">Leer</span></p>
+                    <a  href="#sobremi"><div class="section__link section__link--centrado">Descarga CV &nbsp;&nbsp;<i class="aboutdata__fas fas fa-download"></i></div></a>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <p class="card__num">2+</p>
+                        <p>Años de Experiencia</p>
+                    </div>
+                    <div class="card">
+                        <p class="card__num">125+</p>
+                        <p>Proyectos Realizados</p>
+                    </div>
+                    <div class="card">
+                        <p class="card__num">30+</p>
+                        <p>Clientes</p>
+                    </div>
+                    <div class="card">
+                        <p class="card__num">2+</p>
+                        <p>Premios Ganados</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/c2726348c2.js" crossorigin="anonymous"></script>
